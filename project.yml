@@ -1,0 +1,30 @@
+name: PhysicsForge
+options:
+  bundleIdPrefix: com.ryankaya
+  deploymentTarget:
+    iOS: "16.2"
+  xcodeVersion: "15.0"
+targets:
+  PhysicsForge:
+    type: application
+    platform: iOS
+    sources:
+      - PhysicsForge
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.physicsforge
+        SWIFT_VERSION: 5.9
+        TARGETED_DEVICE_FAMILY: "1,2"
+        DEVELOPMENT_TEAM: ""
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    info:
+      path: PhysicsForge/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    entitlements:
+      path: PhysicsForge/PhysicsForge.entitlements
